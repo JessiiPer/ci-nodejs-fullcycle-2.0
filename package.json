@@ -4,8 +4,7 @@
   "description": "",
   "main": "imc.ts",
   "scripts": {
-    "test": "npx jest --coverage",
-    "start": "npx ts-node src/imc.ts"
+    "test": "npx jest --coverage"
   },
   "author": "Jessica Pereira",
   "license": "ISC",

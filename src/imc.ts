@@ -1,9 +1,6 @@
 export function getImc(peso: number, altura: number): string {
     let imc = calcImc(peso, altura)
-    let result = verifyImc(imc)
-    console.log(result)
-    return result
-
+    return verifyImc(imc)
 }
 
 function calcImc(peso: number, altura: number): number {
@@ -26,3 +23,4 @@ function verifyImc(imc: number): string {
 
     return 'IMC: '+ imcFormatted +  ' - Obesidade'
 }
+
