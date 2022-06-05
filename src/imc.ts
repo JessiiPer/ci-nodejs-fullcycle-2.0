@@ -1,7 +1,14 @@
 export function getImc(peso: number, altura: number): string {
     let imc = calcImc(peso, altura)
-    let imcFormatted = imc.toFixed(2)
+    return verifyImc(imc)
+}
 
+function calcImc(peso: number, altura: number): number {
+    return peso/Math.pow(altura, 2)
+}
+
+function verifyImc(imc: number): string {
+    let imcFormatted = imc.toFixed(2)
     if (imc < 18) {
         return 'IMC: '+ imcFormatted +  ' - Abaixo do peso'
     }
@@ -14,12 +21,6 @@ export function getImc(peso: number, altura: number): string {
         return 'IMC: '+ imcFormatted +  ' - Acima do peso'
     }
 
-    if (imc > 30) {
-        return 'IMC: '+ imcFormatted +  ' - Obesidade'
-    }
-
+    return 'IMC: '+ imcFormatted +  ' - Obesidade'
 }
 
-function calcImc(peso: number, altura: number): number {
-    return peso/Math.pow(altura, 2)
-}
