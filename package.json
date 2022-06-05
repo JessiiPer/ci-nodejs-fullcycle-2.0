@@ -2,11 +2,12 @@
   "name": "ci-fullcycle",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "imc.ts",
   "scripts": {
-    "test": "npx jest --coverage"
+    "test": "npx jest --coverage",
+    "start": "npx ts-node src/imc.ts"
   },
-  "author": "",
+  "author": "Jessica Pereira",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^28.1.1",
