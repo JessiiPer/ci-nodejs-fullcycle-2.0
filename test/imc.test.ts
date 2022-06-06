@@ -9,4 +9,8 @@ describe('testando IMC function', () => {
         expect(getImc(45, 1.75)).toBe('IMC: 14.69 - Abaixo do peso')
     })
 
+    test('testando IMC com peso obeso function', () => {
+        expect(getImc(90, 1.65)).toBe('IMC: 33.06 - Obesidade')
+    })
+
 });
